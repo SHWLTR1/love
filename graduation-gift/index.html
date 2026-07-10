@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى مهندسة قلبي 🎓❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="night-sky">
+        <div class="stars-layer"></div>
+    </div>
+
+    <div class="gears-background">
+        <div class="gear gear-1">⚙️</div>
+        <div class="gear gear-2">⚙️</div>
+        <div class="gear gear-3">⚙️</div>
+    </div>
+
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <div class="container" id="page-1">
+        <div class="cap">📐🎓</div>
+        <h1 class="gold-glow">تهانينا للمهندسة زينب</h1>
+        <div class="typing-container">
+            <p id="typing-text"></p>
+        </div>
+        <button id="start-journey-btn" class="main-btn">ابدئي الرحلة يا مهندسة قلبي ✨</button>
+    </div>
+
+    <div class="container hidden" id="page-2">
+        
+        <div class="envelope-container" id="envelope-area">
+            <div class="envelope-wrapper" id="envelope-wrapper">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="letter">
+                        <div class="letter-content">
+                            <h3>إلى مهندسة قلبي وأجمل خريجة.. زينب ❤️</h3>
+                            <p>اليوم مو بس يوم تخرجك، اليوم هو اليوم اللي أرفع فيه رأسي لآخر السماء فخراً واعتزازاً فيك وبعزيمتك. شفتك وتعبك وسهرك، واليوم ربي بّارك في هذا الجهد وصرتي "المهندسة زينب" اللي طموحها يعانق السحاب.</p>
+                            <p>مبروك التخرج يا بعد كل من قام وقعد، ومنها لأعلى المراتب يارب، مكانك دائماً في القمة لأنك ما ترضين بغيرها، وأنا بظل دائماً سندك  .</p>
+                            <div class="signature">
+                                With love, <span class="name">Turki</span> <span class="heart">❤️</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="envelope-hint" id="env-hint">اضغطي على الظرف لفتح الرسالة ✉️</p>
+            <button id="go-to-cert-btn" class="main-btn hidden">الانتقال إلى الشهادة الرقمية 📜</button>
+        </div>
+
+        <div class="certificate-container hidden" id="certificate-area">
+            <div class="certificate" id="digital-certificate">
+                <div class="cert-outer-border"></div>
+                <div class="cert-inner-border"></div>
+                <div class="cert-pattern"></div>
+                <div class="cert-content">
+                    <div class="cert-header">
+                        <span class="gold-star">⭐</span>
+                        <h2>شهادة تخرّج وفخر واعتزاز</h2>
+                        <span class="gold-star">⭐</span>
+                    </div>
+                    <p class="cert-lead">تُمنح هذه الشهادة الموثقة بنبضات القلب إلى</p>
+                    <h1 class="cert-user-name">المهندسة زينب</h1>
+                    <p class="cert-body-text">بمناسبة نيلها الدرجة العلمية في الهندسة بكل جدارة واستحقاق وتفوق، لتثبت للعالم أن الأحلام بالصبر والعمل تصبح حقيقة ملموسة.</p>
+                    <div class="cert-footer">
+                        <div class="footer-sign">
+                            <p>المحب دائماً:</p>
+                            <span class="signature-style">Turki ❤️</span>
+                        </div>
+                        <div class="footer-badge">🎖️</div>
+                    </div>
+                </div>
+            </div>
+            <button id="download-cert-btn" class="download-btn">حفظ هذه اللوحة للذكرى 💾</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
